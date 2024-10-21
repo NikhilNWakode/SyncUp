@@ -22,7 +22,6 @@ const databaseURL = process.env.DATABASE_URL;
 
 
 
-app.use(cors());
 app.use(
   cors({
     origin: [process.env.origin],
@@ -30,6 +29,12 @@ app.use(
     credentials: true,
   })
 );
+app.options('*', cors({
+  origin: process.env.origin,
+  credentials: true,
+  methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
+}));
+
 app.use("/api/auth/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 
