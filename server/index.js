@@ -16,7 +16,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3001;
-const databaseURL = process.env.DATABASE_URL;
+const databaseURL = "mongodb+srv://wakode333nikhil:AY7zQWAA7bhIrfcK@cluster0.k71kn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
 
