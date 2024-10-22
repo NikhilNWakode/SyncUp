@@ -15,7 +15,7 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 10000;
 const databaseURL = process.env.DATABASE_URL;
 
 
@@ -85,8 +85,7 @@ setupSocket(server)
 mongoose
   .connect(databaseURL)
   .then(() => {
-    useNewUrlParser: true;
-    useUnifiedTopology: true;
+    
     connectTimeoutMS: 30000, 
     console.log("Connected to MongoDB");
   })
