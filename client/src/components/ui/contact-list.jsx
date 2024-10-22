@@ -35,7 +35,7 @@ const ContactList = ({ contacts, isChannel = false }) => {
           key={contact._id}
           className={`px-4 py-3 transition-all flex justify-between items-center rounded-sm duration-300 cursor-pointer ${
             selectedChatData && selectedChatData._id === contact._id
-              ? "bg-purple-500 text-black"
+              ? "bg-purple-700 text-black"
               : "hover:bg-purple-900 hover:text-black"
           }`}
           onClick={() => handleClick(contact)}
