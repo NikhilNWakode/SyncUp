@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const HOST = process.env.VITE_SERVER_URL ||"http://localhost:8747";
+const HOST = "https://syncup-backend.onrender.com" ||"http://localhost:8747";
 
  const apiClient = axios.create({
     baseURL:HOST ,
