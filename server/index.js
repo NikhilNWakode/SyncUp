@@ -85,8 +85,12 @@ setupSocket(server)
 mongoose
   .connect(databaseURL)
   .then(() => {
+    useNewUrlParser: true;
+    useUnifiedTopology: true;
+    connectTimeoutMS: 30000, 
     console.log("Connected to MongoDB");
   })
   .catch((err) => {
     err.message;
+    console.error('MongoDB connection error:', err);
   });
