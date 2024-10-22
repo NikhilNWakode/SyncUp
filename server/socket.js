@@ -5,7 +5,7 @@ import Channel from "./models/ChannelModel.js";
 const setupSocket = (server) => {
   const io = new SocketIOServer(server, {
     cors: {
-      origin: process.env.ORIGIN, // CORS setup for cross-origin requests
+      origin: "https://syncup-frontend.onrender.com", // CORS setup for cross-origin requests
       methods: ["GET", "POST"],
       credentials: true,
     },
