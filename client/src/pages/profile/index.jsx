@@ -34,10 +34,10 @@ const Profile = () => {
     }
     if (userInfo.image) {
       setImage(
-        `http://localhost:8747/${AUTH_ROUTES}/${userInfo.image}` ||
+        `https://syncup-backend.onrender.com/${AUTH_ROUTES}/${userInfo.image}` ||
           (userInfo.email && userInfo.email.charAt(0).toUpperCase())
       );
-      console.log(`http://localhost:8747/${AUTH_ROUTES}/${userInfo.image}`);
+      console.log(`https://syncup-backend.onrender.com/${AUTH_ROUTES}/${userInfo.image}`);
     }
   }, [userInfo]);
 
