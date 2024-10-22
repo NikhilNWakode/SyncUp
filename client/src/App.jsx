@@ -1,4 +1,4 @@
-import React from "react";
+import React,{lazy, Suspense} from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,6 +8,7 @@ import {
 import { useAuth } from "./hooks/auth";
 import Lottie from "react-lottie";
 import { animationDefaultOptions } from "@/utils/animation";
+import { animationLoadingDefaultOptions } from "@/utils/animation";
 
 const Auth = lazy(() => import("./pages/auth"));
 const Profile = lazy(() => import("./pages/profile"));
@@ -65,7 +66,7 @@ function App() {
               isClickToPauseDisabled={true}
               height={200}
               width={200}
-              options={animationDefaultOptions}
+              options={animationLoadingDefaultOptions}
             />
           </div>
         }
