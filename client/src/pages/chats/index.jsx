@@ -30,14 +30,14 @@ const Chat = () => {
 
   return (
     <div className='flex h-[100vh] text-white overflow-hidden' >
-      {
+{/*       {
         isUploading && (
           <div className='flex h-[100vh] w-[100vw] top-0 left-0 z-10 bg-black/80  items-center justify-center flex-col gap-5 backdrop-blur-lg'>
             <h1 className='text-5xl animate-pulse'>Uploading File</h1>
             {fileUploadProgress}%
           </div>
         )
-      }
+      } */}
       {
         isDownloading  && (
           <div className='flex h-[100vh] w-[100vw] top-0 left-0 z-10 bg-black/80  items-center justify-center flex-col gap-5 backdrop-blur-lg'>
