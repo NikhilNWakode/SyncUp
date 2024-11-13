@@ -100,7 +100,7 @@ const MessageBar = () => {
   };
 
   return (
-    <div className="bg-[#1c1b25] p-4 flex items-center justify-center gap-4">
+    <div className="bg-[#1c1b25] p-4 flex items-center justify-center sm:mb-2 mb-0 gap-4">
       <div className="flex flex-1 bg-[#2a2b33] rounded-md items-center gap-3 pr-3">
         <input
           type="text"
