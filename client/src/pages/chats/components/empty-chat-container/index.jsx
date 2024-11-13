@@ -16,7 +16,7 @@ const EmptyChatContainer = () => {
       lg:text-4xl text-3xl transition-all duration-300 text-center">
         <h3 className="poppins-medium font-serif">
             Hi <span className="text-purple-500 ">!</span> Welcome to
-            <span className="text-purple-500 font-semibold" > Friction</span>
+            <span className="text-purple-500 font-semibold" > Syncup</span>
             <br /> Chat App
 
         </h3>
